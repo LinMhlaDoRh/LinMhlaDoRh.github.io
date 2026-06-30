@@ -4,140 +4,224 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Linda Mhlangu | Junior Full-Stack Developer</title>
-  <meta name="description" content="Linda Mhlangu is a final-year BSc IT student and junior software developer focused on secure, database-driven web applications using PHP, JavaScript, MySQL, React, and Supabase." />
+  <meta name="description" content="Linda Mhlangu is a junior full-stack developer and final-year BSc IT student building secure, responsive, database-driven web applications." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="nav" id="nav">
-    <div class="container nav__inner">
-      <a href="#home" class="nav__logo">Linda Mhlangu<span>.</span></a>
-      <nav class="nav__menu" id="navMenu">
-        <a href="#home" class="nav__link">Home</a>
-        <a href="#about" class="nav__link">About</a>
-        <a href="#skills" class="nav__link">Skills</a>
-        <a href="#projects" class="nav__link">Projects</a>
-        <a href="#education" class="nav__link">Education</a>
-        <a href="#contact" class="nav__link">Contact</a>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Linda Mhlangu<span>.</span></a>
+      <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+      <a href="assets/Linda_Mhlangu_CV.pdf" class="cv-button" download>Download CV <span aria-hidden="true">⇩</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="container hero__inner reveal">
-        <p class="eyebrow">Hello, I'm Linda Mhlangu</p>
-        <h1 class="hero__title">Junior Software Developer focused on secure, database-driven web applications.</h1>
-        <p class="hero__text">I build practical web applications using PHP, JavaScript, MySQL, React, Supabase/PostgreSQL, and object-oriented back-end logic. I am a final-year BSc IT Software Development student based in Durban, South Africa.</p>
-        <div class="hero__buttons">
-          <a href="#projects" class="btn btn--primary">View Projects</a>
-          <a href="assets/Linda_Mhlangu_CV.pdf" class="btn btn--outline" download>Download CV</a>
-          <a href="https://github.com/LinMhlaDoRh" target="_blank" rel="noopener" class="btn btn--outline">GitHub</a>
-          <a href="https://www.linkedin.com/in/lindamhlangu" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn</a>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Linda Mhlangu<br />Junior Full-Stack Developer</h1>
+          <div class="mini-line"></div>
+          <p class="hero-text">I build clean, responsive and secure web applications that help people complete real tasks with confidence.</p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-dark">View My Work <span>→</span></a>
+            <a href="#contact" class="btn btn-light">Contact Me <span>→</span></a>
+          </div>
+          <div class="social-row" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/lindamhlangu" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="https://github.com/LinMhlaDoRh" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="mailto:lindamhlangu6@gmail.com" aria-label="Email">@</a>
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="topo-lines"></div>
+          <div class="floating-code code-one">&lt;/&gt;</div>
+          <div class="floating-code code-two">{ }</div>
+          <div class="scroll-mark"><span>↓</span><small>Scroll down</small></div>
         </div>
       </div>
     </section>
 
-    <section class="section about" id="about">
-      <div class="container about__inner">
-        <div class="about__intro reveal">
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="section-copy reveal">
           <p class="eyebrow">About Me</p>
-          <h2 class="section__title">I build useful systems with clear logic, secure access, and real user workflows.</h2>
-          <p class="about__text">I am a final-year BSc IT Software Development student at Richfield Graduate Institute of Technology. My strongest work is in secure, database-driven applications, especially PHP, MySQL, authentication, sessions, CRUD workflows, and structured back-end logic.</p>
-          <p class="about__text">I am also strengthening my full-stack direction through React, Supabase/PostgreSQL, Vercel deployment, TypeScript, Laravel, and AWS serverless development. My goal is to grow into a junior software or full-stack developer role where I can contribute to real products and keep improving technically.</p>
+          <h2>I design and develop digital experiences that make an impact.</h2>
+          <p>I am a final-year BSc IT Software Development student based in Durban, South Africa. My work focuses on secure, database-driven applications, clear back-end logic, responsive interfaces and practical user workflows.</p>
+          <p>I enjoy turning ideas into usable systems with authentication, CRUD features, relational databases, clean UI and reliable deployment.</p>
+          <a href="#contact" class="btn btn-light">More About Me <span>→</span></a>
         </div>
-        <div class="about__grid">
-          <article class="feature reveal"><div class="feature__icon">DB</div><h3>Database-Driven Builds</h3><p>Relational schemas, CRUD workflows, user data, posts, authentication records, and transaction-style logic.</p></article>
-          <article class="feature reveal"><div class="feature__icon">SEC</div><h3>Secure by Default</h3><p>bcrypt hashing, sessions, SQL-injection prevention, role-based access, and Supabase row-level security.</p></article>
-          <article class="feature reveal"><div class="feature__icon">PHP</div><h3>Back-End Logic</h3><p>Object-oriented PHP, business rules, validation, payment simulation flows, and separation of concerns.</p></article>
-          <article class="feature reveal"><div class="feature__icon">UI</div><h3>Practical Front-End</h3><p>Responsive layouts, JavaScript DOM interaction, form validation, React components, and user-focused interfaces.</p></article>
+        <div class="feature-grid reveal">
+          <article class="feature-card">
+            <div class="icon-box">&lt;/&gt;</div>
+            <div><h3>Clean Code</h3><p>I write maintainable code with clear structure, validation and readable logic.</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box">▣</div>
+            <div><h3>Responsive Design</h3><p>I create interfaces that work smoothly on phones, tablets and desktops.</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box">⚡</div>
+            <div><h3>Performance</h3><p>I build lightweight pages and practical flows that feel fast and focused.</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box">◎</div>
+            <div><h3>User Focused</h3><p>I design around real users, simple forms and clear actions.</p></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section skills" id="skills">
+    <section class="services section" id="services">
       <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">Technical Skills</p>
-          <h2 class="section__title">A focused junior developer stack</h2>
-          <p>Grouped around what I can build with, explain clearly, and continue improving.</p>
+        <div class="center-head reveal">
+          <p class="eyebrow">What I Do</p>
+          <h2>Services I Offer</h2>
         </div>
-        <div class="skills__grid">
-          <article class="skill-card reveal"><h3>Back-End Development</h3><ul><li>Object-Oriented PHP</li><li>CRUD Application Development</li><li>Authentication &amp; Sessions</li><li>Business Logic Implementation</li><li>Input Validation</li><li>File Upload Handling</li></ul></article>
-          <article class="skill-card reveal"><h3>Front-End</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li><li>DOM Manipulation</li><li>Responsive UI</li><li>Form Validation</li></ul></article>
-          <article class="skill-card reveal"><h3>Database Systems</h3><ul><li>MySQL</li><li>Supabase/PostgreSQL</li><li>Relational Schema Design</li><li>Primary &amp; Foreign Keys</li><li>Data Validation</li><li>User/Post/Transaction Data Modelling</li><li>Database Normalisation</li></ul></article>
-          <article class="skill-card reveal"><h3>Security</h3><ul><li>bcrypt Password Hashing</li><li>SQL-Injection Prevention</li><li>Role-Based Access Control</li><li>Row-Level Security</li><li>Session Management</li></ul></article>
-          <article class="skill-card reveal"><h3>Tools</h3><ul><li>Git</li><li>GitHub</li><li>VS Code</li><li>phpMyAdmin</li><li>Browser DevTools</li><li>Vercel</li></ul></article>
-          <article class="skill-card reveal"><h3>Foundations &amp; Growth</h3><ul><li>Networking Fundamentals</li><li>Algorithmic Thinking</li><li>Problem Solving</li><li>Basic Python Scripting</li><li>Currently Strengthening: TypeScript, Laravel, AWS serverless development</li></ul></article>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="round-icon">▣</div>
+            <h3>Web Design</h3>
+            <p>I design modern, clean and visually balanced websites with a neutral professional style.</p>
+            <a href="#contact">Learn More →</a>
+          </article>
+          <article class="service-card reveal">
+            <div class="round-icon">&lt;/&gt;</div>
+            <h3>Web Development</h3>
+            <p>I build secure, scalable websites and web applications using front-end and back-end tools.</p>
+            <a href="#contact">Learn More →</a>
+          </article>
+          <article class="service-card reveal">
+            <div class="round-icon">DB</div>
+            <h3>Database Systems</h3>
+            <p>I create database-driven features, authentication, CRUD workflows and structured data models.</p>
+            <a href="#contact">Learn More →</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section projects-section" id="projects">
+    <section class="portfolio section" id="portfolio">
       <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">My Work</p>
-          <h2 class="section__title">Featured Projects</h2>
-          <p>Projects are ordered by strength, completeness, and relevance to junior developer roles.</p>
+        <div class="portfolio-head reveal">
+          <div>
+            <p class="eyebrow">My Work</p>
+            <h2>Featured Projects</h2>
+          </div>
+          <div class="filter-pills" aria-label="Project categories">
+            <button class="active" type="button">All</button>
+            <button type="button">Full Stack</button>
+            <button type="button">Back-End</button>
+            <button type="button">Database</button>
+          </div>
         </div>
-        <div class="project-stack">
-          <article class="project-card project-card--featured reveal">
-            <div class="project-card__top"><span class="project-card__badge">Flagship Project</span><span class="project-card__stack">React · Vite · Supabase · PostgreSQL · Vercel</span></div>
-            <h3>Student Events Platform</h3>
-            <p class="project-card__summary">Built and deployed a cross-campus event platform that allows students to suggest, vote on, and commit to campus events.</p>
-            <div class="project-details"><p><strong>Built with:</strong> React, Vite, Supabase Auth, PostgreSQL, Supabase Edge Functions, Vercel</p><p><strong>Key features:</strong> student suggestions, voting, event commitment, SRC/admin event management, feedback analytics, student directory, AI-assisted suggestion clustering</p><p><strong>Focus:</strong> role-based user workflows, secure data access, database structure, RLS policies, and practical deployment</p></div>
-            <div class="project__links"><a href="https://student-events-platform.vercel.app" target="_blank" rel="noopener">View Live Demo</a><a href="https://github.com/LinMhlaDoRh/Student-Events-Platform" target="_blank" rel="noopener">View GitHub Repository</a></div>
+        <div class="project-grid">
+          <article class="project-tile reveal">
+            <div class="project-image project-image-one">
+              <div class="browser-card"><span></span><span></span><span></span><strong>Events</strong><p>Student platform</p></div>
+            </div>
+            <div class="project-meta">
+              <div><h3>Student Events Platform</h3><p>React · Supabase · Vercel</p></div>
+              <a href="https://student-events-platform.vercel.app" target="_blank" rel="noopener" aria-label="View Student Events Platform">↗</a>
+            </div>
           </article>
-          <article class="project-card reveal">
-            <div class="project-card__top"><span class="project-card__badge">Full-Stack</span><span class="project-card__stack">PHP · JavaScript · MySQL</span></div>
-            <h3>Social Media Platform</h3>
-            <p class="project-card__summary">Built a PHP and MySQL social platform with user registration, login, profile management, posts, direct messaging, password reset, and media uploads.</p>
-            <div class="project-details"><p><strong>Built with:</strong> PHP, MySQL, HTML, CSS, JavaScript</p><p><strong>Key features:</strong> authentication, user profiles, posts, messaging, password reset, media upload handling, responsive UI</p><p><strong>Focus:</strong> hashed password storage, session-based access control, SQL-injection prevention, and relational database design</p></div>
-            <div class="project__links"><a href="https://github.com/LinMhlaDoRh/Social-Platform" target="_blank" rel="noopener">View GitHub Repository</a></div>
+          <article class="project-tile reveal">
+            <div class="project-image project-image-two">
+              <div class="dark-preview"><h4>Social<br />Experience</h4><p>Profiles · Posts · Messages</p></div>
+            </div>
+            <div class="project-meta">
+              <div><h3>Social Media Platform</h3><p>PHP · JavaScript · MySQL</p></div>
+              <a href="https://github.com/LinMhlaDoRh/Social-Platform" target="_blank" rel="noopener" aria-label="View Social Media Platform">↗</a>
+            </div>
           </article>
-          <article class="project-card reveal">
-            <div class="project-card__top"><span class="project-card__badge">Back-End Logic</span><span class="project-card__stack">PHP · OOP</span></div>
-            <h3>PHP Payment Processing Simulator</h3>
-            <p class="project-card__summary">Built an object-oriented PHP payment processing simulator for credit card, PayPal, and cryptocurrency flows.</p>
-            <div class="project-details"><p><strong>Built with:</strong> PHP and object-oriented programming</p><p><strong>Key features:</strong> fee calculation, fraud validation rules, refund checks, secure transaction ID generation, and transaction history</p><p><strong>Focus:</strong> clean class-based business logic, separation of concerns, validation, and back-end flow design without relying on a database</p></div>
-            <div class="project__links"><a href="https://github.com/LinMhlaDoRh/PHP-Processing-System" target="_blank" rel="noopener">View GitHub Repository</a></div>
+          <article class="project-tile reveal">
+            <div class="project-image project-image-three">
+              <div class="payment-card"><span>₿</span><strong>Payment Flow</strong><p>Validation · Fees · Refunds</p></div>
+            </div>
+            <div class="project-meta">
+              <div><h3>Payment Processing Simulator</h3><p>Object-Oriented PHP</p></div>
+              <a href="https://github.com/LinMhlaDoRh/PHP-Processing-System" target="_blank" rel="noopener" aria-label="View Payment Processing Simulator">↗</a>
+            </div>
           </article>
         </div>
-        <div class="early-projects reveal">
-          <div class="early-projects__head"><p class="eyebrow">Early Project</p><h3>Student Grade Management System</h3></div>
-          <p>Built a console-based CRUD application for managing student records, grade assignment, search, filtering, and input validation. This project shows foundation-level C++ problem solving, control structures, functions, arrays/vectors, and basic data handling.</p>
-          <div class="project__links"><a href="https://github.com/LinMhlaDoRh/student-management-system" target="_blank" rel="noopener">View GitHub Repository</a></div>
+        <div class="view-all reveal">
+          <a href="https://github.com/LinMhlaDoRh" target="_blank" rel="noopener" class="btn btn-light">View All Projects <span>→</span></a>
         </div>
       </div>
     </section>
 
-    <section class="section education" id="education">
-      <div class="container education__inner">
-        <div class="education__main reveal"><p class="eyebrow">Education</p><h2 class="section__title">BSc Information Technology in Software Development</h2><p>Richfield Graduate Institute of Technology, Durban</p><p class="muted">Expected completion: 2026 | Expected graduation: 2027</p></div>
-        <div class="certs reveal"><h3>Certifications</h3><ul><li>AWS Academy Cloud Foundations</li><li>AWS Cloud Quest: Serverless Developer</li><li>AWS Certified Developer Associate: In Progress</li><li>Cisco Network Essentials</li><li>Cisco JavaScript Essentials 1</li><li>IBM AI Fundamentals with Capstone Project</li></ul></div>
+    <section class="skills section" id="skills">
+      <div class="container split-section">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Skills & Education</p>
+          <h2>A focused junior developer stack</h2>
+          <p>This section highlights what I can currently build, study and keep improving.</p>
+        </div>
+        <div class="skill-panel reveal">
+          <div class="skill-list">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>PHP</span><span>MySQL</span><span>Supabase</span><span>PostgreSQL</span><span>GitHub</span><span>Vercel</span><span>Authentication</span><span>Responsive UI</span>
+          </div>
+          <div class="education-card">
+            <h3>BSc IT in Software Development</h3>
+            <p>Richfield Graduate Institute of Technology, Durban</p>
+            <small>Expected completion: 2026 · Expected graduation: 2027</small>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="container contact__inner">
-        <div class="contact__info reveal">
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
           <p class="eyebrow">Get In Touch</p>
-          <h2 class="section__title">Open to junior developer opportunities</h2>
-          <p class="contact__text">I am currently open to junior software developer, backend developer, and full-stack developer opportunities. Feel free to contact me through email, LinkedIn, or GitHub.</p>
-          <ul class="contact__list"><li><span class="contact__icon">✉</span> <a href="mailto:lindamhlangu6@gmail.com">lindamhlangu6@gmail.com</a></li><li><span class="contact__icon">☎</span> <a href="tel:+27698146786">+27 69 814 6786</a></li><li><span class="contact__icon">◉</span> Durban, South Africa</li></ul>
-          <div class="contact__socials"><a href="assets/Linda_Mhlangu_CV.pdf" download>Download CV</a><a href="https://www.linkedin.com/in/lindamhlangu" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/LinMhlaDoRh" target="_blank" rel="noopener">GitHub</a></div>
+          <h2>Let’s Work Together</h2>
+          <p>Have an opportunity, project idea or question? Send a message and it will open an email addressed to me with your details included.</p>
+          <ul class="contact-list">
+            <li><span>✉</span><a href="mailto:lindamhlangu6@gmail.com">lindamhlangu6@gmail.com</a></li>
+            <li><span>☎</span><a href="tel:+27698146786">+27 69 814 6786</a></li>
+            <li><span>⌖</span>Durban, South Africa</li>
+          </ul>
         </div>
-        <form class="contact__form reveal" id="contactForm"><div class="form__row"><input type="text" id="name" placeholder="Your Name" required /><input type="email" id="email" placeholder="Your Email" required /></div><input type="text" id="subject" placeholder="Subject" required /><textarea id="message" rows="5" placeholder="Your Message" required></textarea><button type="submit" class="btn btn--primary">Send Message</button></form>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required />
+            <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" required />
+          </div>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-dark">Send Message <span>↗</span></button>
+          <p class="form-note" id="formNote" aria-live="polite">This form uses your email app to send the message.</p>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="container footer__inner"><a href="#home" class="nav__logo">Linda Mhlangu<span>.</span></a><p class="footer__copy">© <span id="year"></span> Linda Mhlangu. All rights reserved.</p><div class="footer__socials"><a href="https://www.linkedin.com/in/lindamhlangu" target="_blank" rel="noopener">in</a><a href="https://github.com/LinMhlaDoRh" target="_blank" rel="noopener">GH</a></div></div></footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand">Linda Mhlangu<span>.</span></a>
+      <p>© <span id="year"></span> Linda Mhlangu. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/lindamhlangu" target="_blank" rel="noopener">in</a>
+        <a href="https://github.com/LinMhlaDoRh" target="_blank" rel="noopener">GH</a>
+        <a href="mailto:lindamhlangu6@gmail.com">@</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
